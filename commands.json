@@ -1,0 +1,12 @@
+{
+    "commands": [
+        {
+            "command": "!bc <message>",
+            "description": "For Broadcasting messages"
+        },
+        {
+            "command": "!play <musicTitle>",
+            "description": "For playing music"
+        }
+    ]
+}

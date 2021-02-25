@@ -1,0 +1,18 @@
+{
+  "name": "discordapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "opusscript": "0.0.8",
+    "ytdl-core": "^4.5.0",
+    "ytsearcher": "^1.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
