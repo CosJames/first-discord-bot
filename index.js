@@ -2,10 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const commands = require('./commands.json')
 
+let token = process.env.DISCORD_TOKEN
+let yt = process.env.YOUTUBE_API
+
 const ytdl = require('ytdl-core')
 const { YTSearcher } = require('ytsearcher');
 const searcher = new YTSearcher({
-    key: process.env.YOUTUBE_API,
+    key: yt,
     revealed: true
 })
 
@@ -18,6 +21,7 @@ client.on('ready', () => {
 
 
 client.on('message', async(message) => {
+    /** 
     const prefix = '!';
 
     // get the map of the server id
@@ -202,9 +206,9 @@ client.on('message', async(message) => {
             }
         }
     }
-    memberPowers(message)
+    memberPowers(message)*/
 });
 
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(token);
 
