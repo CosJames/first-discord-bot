@@ -1,8 +1,6 @@
-const { executionAsyncResource } = require('async_hooks');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const commands = require('./commands.json')
-const  { token } = require('./config.json')
 
 const ytdl = require('ytdl-core')
 const { YTSearcher } = require('ytsearcher');
