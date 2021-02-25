@@ -7,7 +7,7 @@ const  { token } = require('./config.json')
 const ytdl = require('ytdl-core')
 const { YTSearcher } = require('ytsearcher');
 const searcher = new YTSearcher({
-    key: 'AIzaSyDHRYQhaOTNXfz-IYSsOEPp6odgFv6i3QM',
+    key: process.env.YOUTUBE_API,
     revealed: true
 })
 
@@ -208,5 +208,5 @@ client.on('message', async(message) => {
 });
 
 
-client.login(token);
+client.login(process.env.DISCORD_TOKEN);
 
